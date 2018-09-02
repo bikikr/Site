@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+        <title>Cloud Wing Technologies</title>
+        <link rel="shortcut icon" type="image/png" href="img/fav.png"/>
+        <style>
+        body {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Quattrocento', serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+@-webkit-keyframes delayedShow {
+  to {
+    visibility: visible;
+   
+  }
+   0%   { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+@keyframes delayedShow {
+  to {
+    visibility: visible;
+   
+  }
+   0%   { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.delayedShow{
+  visibility: hidden;
+  animation: 0s linear 0.5s forwards delayedShow ;
+}
+
+    </style>
+    </head>
+    <body>
+        <div id="navbar">
+  
+  <a href="javascript:void(0)">Contact</a>
+  <a href="javascript:void(0)">Testimonials</a>
+  <a href="javascript:void(0)">Careers</a>
+  <a href="javascript:void(0)">Clients</a>
+  <a href="http://localhost:8383/HTML5Application/OurTeam.html">Team</a>
+  <a href="http://localhost:8383/HTML5Application/Fairloy.html">Fairloy</a>
+  <a href="http://localhost:8383/HTML5Application/OurServices.html">Our Services</a>
+  <a class="active"  href="http://localhost:8383/HTML5Application/AboutUs.html" href="AboutUs.html">About Us</a>
+  <a  href="http://localhost:8383/HTML5Application/index.html">Home</a>
+</div>
+       <div class="w3-container w3-center w3-animate-opacity">
+           <h1 style="font-family: 'Quattrocento', serif; text-align: center; margin-top: 40px; text-shadow: 2px 2px #A5A5A5;"><b>Who Are We?</b></h1>
+           <div class="delayedShow">
+           <p style="font-size: 20px;"><i>
+Ok, so we get asked a lot, why Cloud Wing? Why Wing? Why not some acronym or initial grouping or catching title that includes the latest buzz phrase? The answer is simple because that’s not who we are. We wanted a moniker that captured what we do, who we are. We knew we were a group of experienced professionals--who had successfully launched and grown brands for our clients, collectively.
+
+
+<br><br>So, after thoughtful contemplation, we chose Cloud Wing, because it means a type of fin that produces LIFT. Because really that’s what we do—Cloud Wing Technologies gives life to powerful new brands and a new lift to static ones.
+
+
+<br><br>We also loved that in mathematics, especially in the area of geometry known as Wing theory, which is a mathematical model that predicts lift distribution over a three-dimensional wing based on its geometry. That three-dimensional concept fits our philosophy and strategy for a successful branding campaign— Study/Research, Analysis, Creativity, Action/Implementation and Results/Brand Growth. And then the cycles begin again.</i></p>
+           </div>    
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+       </body>
+</html>

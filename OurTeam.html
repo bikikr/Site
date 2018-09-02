@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+        <title>Cloud Wing Technologies</title>
+        <link rel="shortcut icon" type="image/png" href="img/fav.png"/>
+<style>
+      body {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Quattrocento', serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+@-webkit-keyframes delayedShow {
+  to {
+    visibility: visible;
+   
+  }
+   0%   { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+@keyframes delayedShow {
+  to {
+    visibility: visible;
+   
+  }
+   0%   { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.delayedShow{
+  visibility: hidden;
+  animation: 0s linear 0.5s forwards delayedShow ;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ 
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+         <div id="navbar">
+  
+  <a href="javascript:void(0)">Contact</a>
+  <a href="javascript:void(0)">Testimonials</a>
+  <a href="javascript:void(0)">Careers</a>
+  <a href="javascript:void(0)">Clients</a>
+  <a class="active" href="http://localhost:8383/HTML5Application/OurTeam.html">Team</a>
+  <a href="http://localhost:8383/HTML5Application/Fairloy.html">Fairloy</a>
+  <a href="http://localhost:8383/HTML5Application/OurServices.html">Our Services</a>
+  <a href="http://localhost:8383/HTML5Application/AboutUs.html" href="AboutUs.html">About Us</a>
+  <a  href="http://localhost:8383/HTML5Application/index.html">Home</a>
+</div>
+        <div>
+            <img src="img/t1.png" alt="OurTeam" class="center" style="width:128px;height:128px;">
+        </div>
+        <h1 style="font-family: 'Quattrocento', serif; text-align: center; margin-top: 10px;  text-shadow: 2px 2px #A5A5A5;"><b>Our Team</b></h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/f1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2 style="font-size: 30px;">@Name_goes</h2>
+        <p class="title" style="font-size: 20px;">Product Manager</p>
+        <p style="font-size: 15px;">Some text that describes the person and job description.</p>
+        <p style="font-size: 15px;">example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/f2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2 style="font-size: 30px;">@Name_goes</h2>
+        <p class="title" style="font-size: 20px;">Quality Assurance</p>
+        <p style="font-size: 15px;">Some text that describes the person and job description.</p>
+        <p style="font-size: 15px;">example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/f3.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2 style="font-size: 30px;">@Name_goes</h2>
+        <p class="title" style="font-size: 20px;">Program Manager</p>
+        <p style="font-size: 15px;">Some text that describes the person and job description.</p>
+        <p style="font-size: 15px;">example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+<title>Cloud Wing Technologies</title>
+<link rel="shortcut icon" type="image/png" href="img/fav.png"/>
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Quattrocento', serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+   background-color: white;
+  color: black;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<div id="navbar">
+  
+  <a href="javascript:void(0)">Contact</a>
+  <a href="javascript:void(0)">Testimonials</a>
+  <a href="javascript:void(0)">Careers</a>
+  <a href="javascript:void(0)">Clients</a>
+  <a href="http://localhost:8383/HTML5Application/OurTeam.html">Team</a>
+  <a href="http://localhost:8383/HTML5Application/Fairloy.html">Fairloy</a>
+  <a href="http://localhost:8383/HTML5Application/OurServices.html">Our Services</a>
+  <a href=" http://localhost:8383/HTML5Application/AboutUs.html">About Us</a>
+  <a class="active" href="http://localhost:8383/HTML5Application/index.html">Home</a>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+</body>
+</html>

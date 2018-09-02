@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+<title>Cloud Wing Technologies</title>
+<link rel="shortcut icon" type="image/png" href="img/fav.png"/>
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Quattrocento', serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div id="navbar">
+  
+  <a href="javascript:void(0)">Contact</a>
+  <a href="javascript:void(0)">Testimonials</a>
+  <a href="javascript:void(0)">Careers</a>
+  <a href="javascript:void(0)">Clients</a>
+  <a href="http://localhost:8383/HTML5Application/OurTeam.html">Team</a>
+  <a href="http://localhost:8383/HTML5Application/Fairloy.html">Fairloy</a>
+  <a class="active" href="http://localhost:8383/HTML5Application/OurServices.html">Our Services</a>
+  <a href=" http://localhost:8383/HTML5Application/AboutUs.html">About Us</a>
+  <a href="http://localhost:8383/HTML5Application/index.html">Home</a>
+</div>
+    <div style="font-family: 'Quattrocento', serif; text-align: center; margin-top: 47px;">
+    <h2 style="text-shadow: 2px 2px #A5A5A5;">Our Services</h2>
+    </div>
+<div class="card" style="float: left; margin-top: 25px; margin-left: 55px;">
+  <img src="img/s1.png" alt="Avatar" style="width:25%">
+  <div class="container">
+    <h3><b>Fairloy Card</b></h3> 
+    <p>Loyalty Program</p> 
+  </div>
+</div>
+<div class="card" style="float: right; margin-top: 25px; margin-right: 55px;">
+  <img src="img/s2.png" alt="Avatar" style="width:25%">
+  <div class="container">
+    <h3><b>Web Designing</b></h3> 
+    <p>Software Development</p> 
+  </div>
+</div>
+<div class="card" style="float: left;  margin-top: 25px; margin-left: 55px; margin-bottom: 25px;">
+  <img src="img/s3.png" alt="Avatar" style="width:25%">
+  <div class="container">
+    <h3><b>Business Development</b></h3> 
+    <p>Branding Solutions</p> 
+  </div>
+</div>
+<div class="card" style="float: right;  margin-top: 25px; margin-right: 55px; margin-bottom: 25px;">
+  <img src="img/s4.png" alt="Avatar" style="width:25%">
+  <div class="container">
+    <h3><b>Staffing</b></h3> 
+    <p>Human Resource</p> 
+  </div>
+  <div>
+</div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+</body>
+</html>
